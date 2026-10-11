@@ -4,7 +4,7 @@
 
 Prototype interactif d'une plateforme B2B qui aide les entreprises à rechercher, comparer et sélectionner des équipements professionnels (énergie, informatique et bureau, industrie), avec une recherche en langage naturel et des recommandations explicables.
 
-**Démo en ligne :** `https://VOTRE-NOM-UTILISATEUR.github.io/equipmatch-ai/` *(à remplacer après activation de GitHub Pages)*
+**Démo en ligne :** `https://awafallcontact-droid.github.io/EquipMatch_AI/` 
 
 ## ⚠️ Avertissement
 
