@@ -1,0 +1,44 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>EquipMatch AI</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="style.css"></head><body>
+<svg width="0" height="0" style="position:absolute"><defs><linearGradient id="go" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fb923c"/><stop offset="1" stop-color="#c2410c"/></linearGradient></defs></svg>
+<header><div class="lo">Equip<b>Match</b> AI</div><nav id="nv">
+<a href="#accueil" data-en="Home">Accueil</a><a href="#catalogue" data-en="Catalog">Catalogue</a><a href="#ia" data-en="AI search">Recherche IA</a><a href="#comparateur"><span data-en="Comparator">Comparateur</span> <b id="cn"></b></a><a href="#fournisseurs" data-en="Suppliers">Espace fournisseurs</a><a href="#vision" data-en="Our vision">Notre vision</a></nav>
+<button id="lg" aria-label="Langue / Language">EN</button><button id="bg" aria-label="Menu">☰</button></header>
+
+<section class="hero" id="accueil"><div>
+<p class="sl" data-en="The right equipment. The right supplier. The right decision.">Le bon équipement. Le bon fournisseur. La bonne décision.</p>
+<h1 data-en="Your professional purchasing, simplified by AI.">Vos achats professionnels, simplifiés par l'IA.</h1>
+<p data-en="Search for equipment, compare offers and identify solutions that fit your needs.">Recherchez des équipements, comparez les offres et identifiez les solutions adaptées à vos besoins.</p>
+<div class="sb"><input id="q" data-pe="Describe the equipment your company needs…" placeholder="Décrivez l'équipement dont votre entreprise a besoin…">
+<div class="ex"><span data-en="Example:">Exemple :</span> <button id="exb" data-en="I'm looking for a 10 MVA power transformer for an industrial project.">Je recherche un transformateur de puissance de 10 MVA pour un projet industriel.</button></div></div>
+<div class="bt"><button class="pr" id="go1" data-en="Start smart search">Lancer la recherche intelligente</button><button onclick="location.hash='catalogue'" data-en="Explore the catalog">Explorer le catalogue</button></div></div>
+<svg id="hv" viewBox="0 0 440 360" role="img" aria-label="Transformateur, alternateur et ordinateur"></svg></section>
+
+<section id="catalogue"><h2 data-en="Equipment catalog">Catalogue d'équipements</h2>
+<p class="mu" data-en="Demo products: brands, prices, suppliers and stock are fictional and not real offers.">Produits de démonstration : marques, prix, fournisseurs et stocks fictifs, ne constituant pas des offres réelles.</p>
+<div class="fl"><span id="flt"></span><select id="so" aria-label="Tri"><option value="n" data-en="Sort: name">Tri : nom</option><option value="p" data-en="Sort: price (known first)">Tri : prix (connus d'abord)</option></select></div>
+<div class="grid" id="grid"></div></section>
+
+<section id="ia"><h2 data-en="AI search">Recherche IA</h2>
+<p class="mu" data-en="Prototype with local keyword rules: no real LLM is connected. Describe your need in your own words.">Prototype à règles locales : aucun vrai LLM n'est connecté. Décrivez votre besoin avec vos mots.</p>
+<div class="sb"><input id="q2" data-pe="Describe the equipment your company needs…" placeholder="Décrivez l'équipement dont votre entreprise a besoin…"><div class="bt"><button class="pr" id="go2" data-en="Start smart search">Lancer la recherche intelligente</button></div><div class="ex" id="exs"></div></div>
+<div id="res"></div></section>
+
+<section id="comparateur"><h2 data-en="Comparator">Comparateur</h2><div id="cmp"></div></section>
+
+<section id="fournisseurs"><h2 data-en="Supplier area">Espace fournisseurs</h2>
+<div class="two" id="sup"></div><p class="mu" data-en="EquipMatch AI does not yet have a network of partner suppliers.">EquipMatch AI ne dispose pas encore de réseau de fournisseurs partenaires.</p>
+<button class="pr" id="bs" data-en="Offer my equipment">Proposer mes équipements</button></section>
+
+<section id="vision"><h2 data-en="Our vision">Notre vision</h2>
+<div class="two"><div class="box"><h3 data-en="The problem">Le problème</h3><p data-en="Companies may spend a lot of time searching for equipment, contacting several suppliers and comparing prices and specifications scattered across channels. Its scale and willingness to pay are hypotheses still to validate.">Les entreprises peuvent perdre du temps à rechercher des équipements, contacter plusieurs fournisseurs et comparer prix et caractéristiques dispersés. L'ampleur du problème et la volonté de payer sont des hypothèses à valider.</p></div>
+<div class="box"><h3 data-en="The solution">La solution</h3><p data-en="A B2B platform to describe a need in natural language, search, compare offers, get explainable recommendations and request quotes. Initial market: Senegal.">Une plateforme B2B pour décrire un besoin en langage naturel, rechercher, comparer les offres, obtenir des recommandations explicables et demander des devis. Marché initial : Sénégal.</p></div></div>
+<h3 style="margin-top:28px" data-en="MVP roadmap">MVP et feuille de route</h3><ol class="rm" id="rm"></ol>
+<h3 style="margin-top:28px" data-en="Questions the jury may ask">Questions possibles du jury</h3><div id="jq"></div></section>
+<footer data-en="Demo prototype: products, brands, prices, suppliers and availability are fictional. AI-assisted recommendations do not replace technical expertise, a compatibility study or a safety validation. Prices, specifications and availability must be verified with suppliers.">Prototype de démonstration : produits, marques, prix, fournisseurs et disponibilités fictifs. Les recommandations assistées par IA ne remplacent pas une expertise technique, une étude de compatibilité ou une validation de sécurité. Les prix, caractéristiques et disponibilités doivent être vérifiés auprès des fournisseurs.</footer>
+
+<dialog id="dq"><form id="fq" novalidate onsubmit="return sub(event,'q',FQ)"></form></dialog>
+<dialog id="ds"><form id="fs" novalidate onsubmit="return sub(event,'s',FS)"></form></dialog>
+<dialog id="dd"><div class="dd" id="ddc"></div></dialog><div id="ts" role="status"></div>
+<script src="script.js"></script></body></html>
